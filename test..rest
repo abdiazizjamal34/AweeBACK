@@ -1,0 +1,114 @@
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Abdi",
+  "email": "abdi@example.com",
+  "password": "123456",
+  "phone": "0912345678"
+}
+
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+# {
+#   "email": "abdi@example.com",
+#   "password": "123456",
+# }
+
+{
+  "email": "abdi@example.com",
+  "password": "123456"
+}
+
+
+### products
+
+Post http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+  "name": "Cement 50kg",
+  "sku": "PRD001",
+  "price": 280.00,
+  "stock": 150,
+  "description": "Dangote cement, 50kg bag",
+  "category": "Construction"
+}
+
+
+### products
+GET http://localhost:5000/api/products
+
+###  update
+
+PUT http://localhost:5000/api/products/67f7bcb48316007b73ac2639
+Content-Type: application/json
+
+{
+  "name": "lament 50kg",
+  "price": 280.00,
+  "stock": 150
+}
+
+
+### delete
+DELETE http://localhost:5000/api/products/67f7bc908316007b73ac2637
+
+
+
+### products
+
+Post http://localhost:5000/api/customers
+Content-Type: application/json
+
+{
+  "name": "Ahmed Ali",
+  "email": "ahmed@gmail.com",
+  "phone": "0911122233",
+  "address": "Addis Ababa"
+}
+
+### customers
+GET http://localhost:5000/api/customers
+
+###  update
+PUT http://localhost:5000/api/customers/67f7c1e6d75cd587d266ed15
+Content-Type: application/json
+
+{
+  "name": "Ahmed Ali one"
+}
+
+
+### 
+PoST http://localhost:5000/api/transactions
+Content-Type: application/json
+
+{
+  "type": "expense",
+  "amount": 150,
+  "category": "Fuel",
+  "description": "Truck delivery fuel"
+}
+
+### transactions
+POST http://localhost:5000/api/transactions
+Content-Type: application/json
+
+{
+  "type": "income",
+  "amount": 500,
+  "category": "Sales",
+  "description": "Product sales"
+}
+
+### transactions
+GET http://localhost:5000/api/transactions
+
+
+###  
+GET http://localhost:5000/api/dashboard/summary

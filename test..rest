@@ -4,9 +4,10 @@ Content-Type: application/json
 
 {
   "name": "Abdi",
-  "email": "abdi@example.com",
+  "email": "admin",
   "password": "123456",
-  "phone": "0912345678"
+  "phone": "0912345678",
+  "role": "admin"
 }
 
 
@@ -111,4 +112,4 @@ GET http://localhost:5000/api/transactions
 
 
 ###  
-GET http://localhost:5000/api/dashboard/summary
+GET http://localhost:5000/api/dashboard/

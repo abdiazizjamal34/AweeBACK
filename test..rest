@@ -61,7 +61,7 @@ DELETE http://localhost:5000/api/products/67f7bc908316007b73ac2637
 
 
 
-### products
+
 
 Post http://localhost:5000/api/customers
 Content-Type: application/json
@@ -113,3 +113,22 @@ GET http://localhost:5000/api/transactions
 
 ###  
 GET http://localhost:5000/api/dashboard/
+
+
+###
+Get http://localhost:5000/api/orders
+
+### create order
+
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "customerId": "67f7c1e6d75cd587d266ed15",
+  "products": [
+    {
+      "productId": "680cca8f7e386ccaf8332b62",
+      "quantity": 2
+    }
+  ]
+}

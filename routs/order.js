@@ -63,6 +63,26 @@ router.put('/:id', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
+// Update Order Status
+router.patch('/status/:id', async (req, res) => {
+    try {
+      const { status } = req.body;
+  
+      if (!['Pending', 'Accepted', 'Delivered', 'Canceled'].includes(status)) {
+        return res.status(400).json({ message: 'Invalid status' });
+      }
+  
+      const updatedOrder = await Order.findByIdAndUpdate(
+        req.params.id,
+        { status },
+        { new: true }
+      );
+  
+      res.status(200).json(updatedOrder);
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  })
 
 // Delete order
 router.delete('/:id', async (req, res) => {

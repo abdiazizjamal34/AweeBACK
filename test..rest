@@ -132,3 +132,15 @@ Content-Type: application/json
     }
   ]
 }
+
+
+
+
+### orders status update
+
+PATCH http://localhost:5000/api/orders/status/680cfae0ab7cab4d741448b1
+Content-Type: application/json
+
+{
+  "status": "Accepted"
+}

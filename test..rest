@@ -3,8 +3,8 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-  "name": "Abdi",
-  "email": "admin",
+  "name": "muun  muu",
+  "email": "abdi@example.com",
   "password": "123456",
   "phone": "0912345678",
   "role": "admin"
@@ -32,8 +32,8 @@ Post http://localhost:5000/api/products
 Content-Type: application/json
 
 {
-  "name": "Cement 50kg",
-  "sku": "PRD001",
+  "name": "nuu 50kg",
+  "sku": "PRD0012",
   "price": 280.00,
   "stock": 150,
   "description": "Dangote cement, 50kg bag",
@@ -61,14 +61,14 @@ DELETE http://localhost:5000/api/products/67f7bc908316007b73ac2637
 
 
 
-
+###
 
 Post http://localhost:5000/api/customers
 Content-Type: application/json
 
 {
-  "name": "Ahmed Ali",
-  "email": "ahmed@gmail.com",
+  "name": "geedi Ali",
+  "email": "gee@gmail.com",
   "phone": "0911122233",
   "address": "Addis Ababa"
 }
@@ -124,11 +124,11 @@ POST http://localhost:5000/api/orders
 Content-Type: application/json
 
 {
-  "customerId": "67f7c1e6d75cd587d266ed15",
+  "customerId": "680df42e498931c58b4f08a1",
   "products": [
     {
-      "productId": "680cca8f7e386ccaf8332b62",
-      "quantity": 2
+      "productId": "680df407498931c58b4f089e",
+      "quantity": 1
     }
   ]
 }

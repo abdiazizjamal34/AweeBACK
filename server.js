@@ -8,6 +8,7 @@ const customerRoutes = require('./routs/customer');
 const transactionRoutes = require('./routs/transaction');
 const dashboardRoutes = require('./routs/dashboard');
 const orderRoutes = require('./routs/order');
+const reportRoutes = require('./routs/report');
 dotenv.config();
 
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/customers', customerRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/reposrt', reportRoutes);
 
 
 

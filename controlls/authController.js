@@ -6,7 +6,7 @@
     // Register a new user
 
     const Register = async (req , res)  =>{
-        const {name, email, password, phone} = req.body;
+        const {name, email, password, phone,role} = req.body;
 
         try{
           const  userExists = await User.findOne({email});
@@ -20,7 +20,8 @@
             name,
             email,
             password : hashedPassword,
-            phone
+            phone,
+            role 
         });
         const token = jwt.sign({id : user._id}, process.env.JWT_SECRET, {
             expiresIn : '7d'

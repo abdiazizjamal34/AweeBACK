@@ -3,8 +3,8 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-  "name": "muun  muu",
-  "email": "abdi@example.com",
+  "name": "admin  one",
+  "email": "admin1@example.com",
   "password": "123456",
   "phone": "0912345678",
   "role": "admin"
@@ -144,3 +144,20 @@ Content-Type: application/json
 {
   "status": "Accepted"
 }
+
+
+###
+
+ POST http://196.189.183.192:2087/v3/banking/get-banks
+Content-Type: application/json
+{
+  "msisdn": "251945421279",
+  "channel": "ANDROID",
+  "versionName": "Tiramisu",
+  "versionCode": "60",
+  "deviceID": "eff289357d"
+}
+
+
+###
+POST  

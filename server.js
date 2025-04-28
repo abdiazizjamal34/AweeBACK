@@ -22,7 +22,7 @@ app.use('/api/customers', customerRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/orders', orderRoutes);
-app.use('/api/reposrt', reportRoutes);
+app.use('/api/reports', reportRoutes);
 
 
 

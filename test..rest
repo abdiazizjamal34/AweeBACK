@@ -160,4 +160,10 @@ Content-Type: application/json
 
 
 ###
-POST  
+
+Get http://localhost:5000/api/reports
+
+
+###
+
+GET http://localhost:5000/api/reports/order-status-summary
